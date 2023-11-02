@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-01 11:06:41.760068",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "color",
+  "seates",
+  "car_plate",
+  "descreption"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "seates",
+   "fieldtype": "Select",
+   "label": "Seates",
+   "options": "\n2\n3\n4\n5\n6\n7\n8"
+  },
+  {
+   "fieldname": "car_plate",
+   "fieldtype": "Data",
+   "label": "Car Plate"
+  },
+  {
+   "fieldname": "descreption",
+   "fieldtype": "Text",
+   "label": "Descreption "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-01 11:08:29.322236",
+ "modified_by": "Administrator",
+ "module": "My App",
+ "name": "Car",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

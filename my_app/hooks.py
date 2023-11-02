@@ -7,6 +7,8 @@ app_description = "testing app"
 app_email = "yzn@mail.com"
 app_license = "MIT"
 
+fixtures = ["Custom Field"]
+
 # Includes in <head>
 # ------------------
 
