@@ -1,52 +1,77 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2023-11-01 11:06:41.760068",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "name1",
   "color",
   "seates",
   "car_plate",
-  "descreption"
+  "descreption",
+  "image"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name"
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
   },
   {
    "fieldname": "color",
    "fieldtype": "Color",
-   "label": "Color"
+   "in_list_view": 1,
+   "label": "Color",
+   "reqd": 1
   },
   {
    "fieldname": "seates",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Seates",
-   "options": "\n2\n3\n4\n5\n6\n7\n8"
+   "options": "\n2\n3\n4\n5\n6\n7\n8",
+   "reqd": 1
   },
   {
+   "description": "Must be in this format abcd-123",
    "fieldname": "car_plate",
    "fieldtype": "Data",
-   "label": "Car Plate"
+   "in_list_view": 1,
+   "label": "Car Plate",
+   "reqd": 1
   },
   {
    "fieldname": "descreption",
    "fieldtype": "Text",
    "label": "Descreption "
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CAR-.YYYY.-"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-01 11:08:29.322236",
+ "modified": "2023-11-02 11:20:32.085015",
  "modified_by": "Administrator",
  "module": "My App",
  "name": "Car",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
